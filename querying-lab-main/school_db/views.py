@@ -387,7 +387,7 @@ SELECT `school_db_student`.`id`,
 def bonus_problem(request):
 
   for instructors in Instructor.objects.all():
-   Course.objects.filter(instructor_id= instructor_id) == 1
+   Course.objects.filter(instructor_id = instructor_id) == 1
   print(f'Instructor Name: {instructors.first_name} {instructors.last_name}')
 
 
